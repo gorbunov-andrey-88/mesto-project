@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link href="./pages/index.css" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+
+    <div class="content page__centered-block">
+
+    <header class="header">
+      <img src="./images/mesto_logo.svg" alt="Лого" class="header__logo">
+    </header>
+
+    <main>
+
+      <section class="profile">
+        <img src="./images/profile_photo.jpg" alt="Фото профиля" class="profile__photo">
+        <div class="profile__info">
+          <h1 class="profile__title">Андрей Горбунов</h1>
+          <button class="button button_type_profile-edit page__button"></button>
+          <p class="profile__description">Веб-разработчик</p>
+        </div>
+        <button class="button button_type_place-add page__button"></button>
+      </section>
+
+      <section class="places">
+        <div class="place">
+          <img src="./images/crite.jpg" alt="Остров Крит" class="place__image">
+          <div class="place__content">
+            <h2 class="place__title">Остров Крит</h2>
+            <button class="button button_type_like page__button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./images/flom.jpg" alt="Деревня Флом" class="place__image">
+          <div class="place__content">
+            <h2 class="place__title">Деревня Флом</h2>
+            <button class="button button_type_like page__button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./images/Stockholm.jpg" alt="Стокгольм" class="place__image">
+          <div class="place__content">
+            <h2 class="place__title">Стокгольм</h2>
+            <button class="button button_type_like button_type_like_active page__button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./images/norway.jpg" alt="Норвегия" class="place__image">
+          <div class="place__content">
+            <h2 class="place__title">Где-то в Норвегии</h2>
+            <button class="button button_type_like page__button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./images/piter.jpg" alt="Закат в Питере" class="place__image">
+          <div class="place__content">
+            <h2 class="place__title">Питер - закат с видом на Лахта Башню</h2>
+            <button class="button button_type_like page__button"></button>
+          </div>
+        </div>
+        <div class="place">
+          <img src="./images/povolzhe.jpg" alt="Поволжье" class="place__image">
+          <div class="place__content">
+            <h2 class="place__title">Поля Поволжья</h2>
+            <button class="button button_type_like page__button"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="popup">
+        <form class="popup__container">
+          <div class="form">
+            <h2 class="form__header">Редактировать профиль</h2>
+            <fieldset class="form__profile-info">
+              <input type="text" class="form__input-text" value="Андрей Горбунов">
+              <input type="text" class="form__input-text" value="Веб-разработчик">
+            </fieldset>
+            <button type="submit" class="button button_type_form-submit">Сохранить</button>
+          </div>
+          <button class="button button_type_form-close page__button"></button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2023 Mesto Russia</p>
+    </footer>
+
+  </div>
+  </div>
+</body>
+</html>

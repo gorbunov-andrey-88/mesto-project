@@ -1,0 +1,21 @@
+.profile__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (max-width: 659px) {
+  .profile__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .profile__description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

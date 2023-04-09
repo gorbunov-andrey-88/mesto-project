@@ -1,0 +1,7 @@
+.button_type_like {
+  border: 0;
+  width: 22px;
+  height: 19px;
+  background-color: white;
+  background-image: url(../../../images/heart_disable_icon.svg);
+}

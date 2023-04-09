@@ -1,0 +1,10 @@
+.form {
+  padding: 36px;
+  min-width: 236px;
+}
+
+@media (max-width: 470px) {
+  .form {
+    padding: 25px 22px;
+  }
+}
