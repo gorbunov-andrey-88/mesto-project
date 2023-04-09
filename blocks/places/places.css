@@ -8,6 +8,6 @@
 
 @media (max-width: 470px) {
   .places {
-    padding-top: 36px;
+    padding: 36px 19px 0;
   }
 }

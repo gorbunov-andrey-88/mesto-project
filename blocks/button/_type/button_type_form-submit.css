@@ -1,4 +1,5 @@
 .button_type_form-submit {
+  border: 0;
   background-color: black;
   height: 50px;
   border-radius: 2px;
@@ -7,4 +8,17 @@
   font-size: 18px;
   line-height: 22px;
   width: 100%;
+  transition: 0.5s;
+}
+
+.button_type_form-submit:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 470px) {
+  .button_type_form-submit {
+    height: 46px;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }

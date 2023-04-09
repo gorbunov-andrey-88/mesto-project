@@ -4,4 +4,9 @@
   height: 19px;
   background-color: white;
   background-image: url(../../../images/heart_disable_icon.svg);
+  transition: 0.5s;
+}
+
+.button_type_like:hover {
+  opacity: 0.5;
 }

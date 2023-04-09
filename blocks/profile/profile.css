@@ -1,6 +1,7 @@
 .profile {
   color: white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 120px minmax(min-content, max-content) 1fr;
   align-items: center;
   gap: 30px;
   padding-top: 40px;
@@ -8,7 +9,9 @@
 
 @media (max-width: 659px) {
   .profile {
+    display: flex;
     flex-direction: column;
     gap: 0;
+    padding: 42px 19px 0;
   }
 }
