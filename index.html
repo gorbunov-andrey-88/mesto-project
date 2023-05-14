@@ -46,31 +46,31 @@
           </fieldset>
           <button type="submit" class="button button_type_form-submit" aria-label="save">Сохранить</button>
         </form>
-        <button type="button" class="button button_type_form-close page__button" aria-label="close"></button>
+        <button type="button" class="button button_type_popup-close page__button" aria-label="close"></button>
       </div>
     </div>
 
-    <div class="popup-place">
-      <div class="popup-place__container">
-        <form class="form-place" name="profile_edit" method="post">
-          <h2 class="form-place__header">Новое место</h2>
-          <fieldset class="form-place__profile-info">
-            <input type="text" class="form-place__input-text" id="new_place" name="new_place" placeholder="Название" value="">
-            <input type="text" class="form-place__input-text" id="new_image" name="new_image" placeholder="Ссылка на картинку" value="">
+    <div class="popup popup-place">
+      <div class="popup__container">
+        <form class="form form-place" name="place_add" method="post">
+          <h2 class="form__header">Новое место</h2>
+          <fieldset class="form__profile-info">
+            <input type="text" class="form__input-text" id="new_place" name="new_place" placeholder="Название" value="">
+            <input type="text" class="form__input-text" id="new_image" name="new_image" placeholder="Ссылка на картинку" value="">
           </fieldset>
-          <button type="submit" class="button button_type_form-submit-place" aria-label="save">Сохранить</button>
+          <button type="submit" class="button button_type_form-submit" aria-label="save">Создать</button>
         </form>
-        <button type="button" class="button button_type_form-close-place page__button" aria-label="close"></button>
+        <button type="button" class="button button_type_popup-close page__button" aria-label="close"></button>
       </div>
     </div>
 
-    <div class="popup-image">
+    <div class="popup popup-image">
       <div class="popup-image__content">
         <figure class="popup-image__figure">
           <img src="./images/crite.jpg" alt="Остров Крит" class="popup-image__image">
           <figcaption class="popup-image__caption">Ваша полка - верхняя</figcaption>
         </figure>
-        <button type="button" class="button button_type_popup-close-image page__button" aria-label="close"></button>
+        <button type="button" class="button button_type_popup-close page__button" aria-label="close"></button>
       </div>
     </div>
 
