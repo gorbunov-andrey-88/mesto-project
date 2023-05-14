@@ -27,48 +27,7 @@
       </section>
 
       <section class="places">
-        <article class="place">
-          <img src="./images/crite.jpg" alt="Остров Крит" class="place__image">
-          <div class="place__content">
-            <h2 class="place__title">Остров Крит</h2>
-            <button type="button" class="button button_type_like page__button" aria-label="like"></button>
-          </div>
-        </article>
-        <article class="place">
-          <img src="./images/flom.jpg" alt="Деревня Флом" class="place__image">
-          <div class="place__content">
-            <h2 class="place__title">Деревня Флом</h2>
-            <button type="button" class="button button_type_like page__button" aria-label="like"></button>
-          </div>
-        </article>
-        <article class="place">
-          <img src="./images/Stockholm.jpg" alt="Стокгольм" class="place__image">
-          <div class="place__content">
-            <h2 class="place__title">Стокгольм</h2>
-            <button type="button" class="button button_type_like-active page__button" aria-label="like"></button>
-          </div>
-        </article>
-        <article class="place">
-          <img src="./images/norway.jpg" alt="Норвегия" class="place__image">
-          <div class="place__content">
-            <h2 class="place__title">Где-то в Норвегии</h2>
-            <button type="button" class="button button_type_like page__button" aria-label="like"></button>
-          </div>
-        </article>
-        <article class="place">
-          <img src="./images/piter.jpg" alt="Закат в Питере" class="place__image">
-          <div class="place__content">
-            <h2 class="place__title">Питер - закат с видом на Лахта Башню</h2>
-            <button type="button" class="button button_type_like page__button" aria-label="like"></button>
-          </div>
-        </article>
-        <article class="place">
-          <img src="./images/povolzhe.jpg" alt="Поволжье" class="place__image">
-          <div class="place__content">
-            <h2 class="place__title">Поля Поволжья</h2>
-            <button type="button" class="button button_type_like page__button" aria-label="like"></button>
-          </div>
-        </article>
+
       </section>
 
     </main>
@@ -82,8 +41,8 @@
         <form class="form" name="profile_edit" method="post">
           <h2 class="form__header">Редактировать профиль</h2>
           <fieldset class="form__profile-info">
-            <input type="text" class="form__input-text" id="name" name="name" placeholder="Имя">
-            <input type="text" class="form__input-text" id="description" name="description" placeholder="О себе">
+            <input type="text" class="form__input-text" id="name" name="name" placeholder="Имя" value="Невведённое имя">
+            <input type="text" class="form__input-text" id="description" name="description" placeholder="О себе" value="Невведённое имя">
           </fieldset>
           <button type="submit" class="button button_type_form-submit" aria-label="save">Сохранить</button>
         </form>
@@ -91,7 +50,44 @@
       </div>
     </div>
 
+    <div class="popup-place">
+      <div class="popup-place__container">
+        <form class="form-place" name="profile_edit" method="post">
+          <h2 class="form-place__header">Новое место</h2>
+          <fieldset class="form-place__profile-info">
+            <input type="text" class="form-place__input-text" id="new_place" name="new_place" placeholder="Название" value="">
+            <input type="text" class="form-place__input-text" id="new_image" name="new_image" placeholder="Ссылка на картинку" value="">
+          </fieldset>
+          <button type="submit" class="button button_type_form-submit-place" aria-label="save">Сохранить</button>
+        </form>
+        <button type="button" class="button button_type_form-close-place page__button" aria-label="close"></button>
+      </div>
+    </div>
+
+    <div class="popup-image">
+      <div class="popup-image__content">
+        <figure class="popup-image__figure">
+          <img src="./images/crite.jpg" alt="Остров Крит" class="popup-image__image">
+          <figcaption class="popup-image__caption">Ваша полка - верхняя</figcaption>
+        </figure>
+        <button type="button" class="button button_type_popup-close-image page__button" aria-label="close"></button>
+      </div>
+    </div>
+
   </div>
+
+  <template id="place_template">
+    <article class="place">
+      <img src="./images/crite.jpg" alt="Остров Крит" class="place__image">
+      <button type="button" class="button button_type_delete page__button" aria-label="delete"></button>
+      <div class="place__content">
+        <h2 class="place__title">Остров Крит</h2>
+        <button type="button" class="button button_type_like page__button" aria-label="like"></button>
+      </div>
+    </article>
+  </template>
+
+  <script src="./script.js"></script>
 
 </body>
 </html>

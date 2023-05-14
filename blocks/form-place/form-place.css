@@ -1,0 +1,10 @@
+.form-place {
+  padding: 34px 36px 37px;
+  min-width: 236px;
+}
+
+@media (max-width: 470px) {
+  .form-place {
+    padding: 25px 22px;
+  }
+}
