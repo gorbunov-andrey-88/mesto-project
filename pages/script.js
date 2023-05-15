@@ -36,7 +36,6 @@ buttonPlaceAdd.addEventListener('click', function () {
   openPopup(popupPlaceAdd);
 });
 
-/* Обрабатываем нажатие на кнопку "Закрыть" */
 /* Обрабатываем нажатие на кнопку "Создать" с проверкой на заполнение полей формы */
 
 formSubmitPlaceAdd.addEventListener('submit', function (evt) {
