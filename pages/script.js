@@ -41,8 +41,8 @@ buttonPlaceAdd.addEventListener('click', function () {
 formSubmitPlaceAdd.addEventListener('submit', function (evt) {
   evt.preventDefault();
   closePopup(popupPlaceAdd);
-  if (new_place.value && new_image.value) {
-    places.prepend(addNewPlace(new_place.value, new_image.value));
+  if (newPlace.value && newImage.value) {
+    places.prepend(addNewPlace(newPlace.value, newImage.value));
   }
   evt.target.reset();
 });
@@ -138,8 +138,8 @@ initialCards.forEach(function (item) {
 /* Объявляем переменные, необходимые для работы */
 
 const buttonOpenPopupProfileEdit = document.querySelector('.button_type_profile-edit');
-const formSubmitProfileEdit = document.querySelector('.form');
-const popupProfileEdit = document.querySelector('.popup');
+const formSubmitProfileEdit = document.querySelector('.form-profile');
+const popupProfileEdit = document.querySelector('.popup-profile');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__description');
 const formNameProfileEdit = document.querySelector('#name');
